@@ -1,0 +1,8 @@
+# Pixi local environment directory
+.pixi/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,28 @@
+[project]
+name = "echo-sync"
+version = "0.1.0"
+description = "Echo-Sync: Edge-Optimized Continuous ISL Translation Platform"
+authors = [
+    "Sri Ram Sharma <193415805+sriramxdev@users.noreply.github.com>",
+    "Ujjawal Kesarwani <#>",
+    "Yusuf Mushtaq <#>",
+    "Shubhanshu Singh <#>"
+]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+
+[dependencies]
+python = ">=3.11,<3.12"
+numpy = ">=1.26"
+pytest = ">=8.0"
+ruff = ">=0.3"
+
+[tasks]
+# Verification snippet for teammates
+verify = "python -c \"import sys, platform; print('--- VERIFIED ---'); print('OS:', platform.system(), platform.release()); print('Python:', sys.version.split()[0]); print('Status: READY')\""
+
+# Scaffolding lifecycle tasks
+start = "python -m src.main"
+test = "pytest tests/"
+lint = "ruff check src/ tests/"
+format = "ruff format src/ tests/"
