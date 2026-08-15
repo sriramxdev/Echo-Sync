@@ -18,10 +18,10 @@ This repository serves as the core development codebase for the **B.Tech Final Y
 
 ## 👥 Project Team
 
-* **Sri Ram Sharma** — *Team Lead & Architecture*[cite: 1]
-* **Yusuf Mushtaq** — *Core Engineering & Development*[cite: 1]
-* **Ujjawal Kesarwani** — *Core Engineering & Development*[cite: 1]
-* **Shubhanshu Singh** — *Core Engineering & Development*[cite: 1]
+* **Sri Ram Sharma** — *Team Lead & Architecture*
+* **Yusuf Mushtaq** — *Core Engineering & Development*
+* **Ujjawal Kesarwani** — *Core Engineering & Development*
+* **Shubhanshu Singh** — *Core Engineering & Development*
 
 ---
 
