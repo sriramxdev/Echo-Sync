@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "echo-sync"
 version = "0.1.0"
 description = "Echo-Sync: Edge-Optimized Continuous ISL Translation Platform"
