@@ -1,6 +1,6 @@
 # Echo-Sync
 
-> **Edge-Optimized Real-Time Accessibility & Multimodal Translation Platform**
+> **Edge-Optimized Real-Time Sign Language Translation Platform**
 
 [![Environment: Pixi](https://img.shields.io/badge/Environment-Pixi-blue.svg)](https://pixi.sh)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
