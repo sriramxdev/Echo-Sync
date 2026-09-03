@@ -33,3 +33,11 @@ This repository uses **[Pixi](https://pixi.sh)** for deterministic, multi-platfo
 * **Linux / macOS:**
   ```bash
   curl -fsSL [https://pixi.sh/install.sh](https://pixi.sh/install.sh) | sh
+
+## Setup on Windows
+
+- Open powershell at the location you want this repo to be cloned.
+- Paste the following and press enter to run the **setup_win.ps1**.
+  ```powershell
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+  irm https://raw.githubusercontent.com/sriramxdev/Echo-Sync/main/setup_win.ps1 | iex
