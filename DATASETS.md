@@ -15,15 +15,14 @@
 ---
 
 ## 🌍 Category B: Standard / Global Continuous SLR Benchmarks
+
 * **Assigned To:** Yusuf Mushtaq
 * **Focus:** Standard academic benchmark datasets used for baseline comparisons (e.g., PHOENIX-Weather, CSL-Daily, WLASL).
 
 | Dataset Name | Source / Repository Link | Format (RGB / Skeletal / 3D) | Size / Vocab Count | Notes |
-
+|---|---|---|---|---|
 | RWTH-PHOENIX-Weather 2014-T | [RWTH-PHOENIX-2014-T](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/) | RGB + Gloss + Translation | 39 GB / 1,085 signs | Continuous German Sign Language benchmark |
-
 | How2Sign | [How2Sign](https://how2sign.github.io/#download) | RGB + Depth + 2D/3D Skeleton | 16,609 vocabulary / 80+ hours | Large-scale continuous American Sign Language benchmark |
-
 | LSA-T | [LSA-T](https://github.com/midusi/LSA-T) | RGB + Skeletal Keypoints | 8,459 clips / 14,239-word vocabulary | First continuous Argentinian Sign Language dataset |
 
 ---
