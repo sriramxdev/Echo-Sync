@@ -8,9 +8,13 @@
 * **Assigned To:** Shubhanshu Singh
 * **Focus:** Continuous ISL sentence-level video/skeletal datasets (e.g., INCLUDE, ISL-CSLR, or regional corpora).
 
+## Continuous Indian Sign Language (ISL) Datasets
+
 | Dataset Name | Source / Repository Link | Format (RGB / Skeletal / 3D) | Size / Vocab Count | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| *Example* | `https://example.com/isl-dataset` | Video / Skeletal | ~5,000 samples | Verified working link |
+|---|---|---|---|---|
+| **iSign / ISLTranslate** | [Official iSign Website](https://exploration-lab.github.io/iSign/) | RGB Video + Skeletal/Pose | 31K+ ISL-English sentence/phrase pairs | Large-scale continuous ISL dataset for ISL-to-English translation. Supports both video-to-text and pose-to-text tasks. |
+| **ISL-CSLTR** | [Mendeley Data](https://data.mendeley.com/datasets/kcmpdxky7p/1) | RGB Video | 700 videos, 100 sentences, 7 signers, 18,863 sentence-level frames, 1,036 word-level images | Sentence-level continuous ISL dataset with annotations, signer variants, and time boundaries. Publicly available under CC BY 4.0. |
+| **ISL-FS** | [Official ISL-Fingerspelling Website](https://kirandevraj.github.io/ISL-Fingerspelling/) | RGB Video | 1,308 segments, 499 source videos, 14,814 characters, 3 signers | Continuous ISL fingerspelling dataset with aligned text and temporal annotations. Research use under CC BY-NC 4.0. |
 
 ---
 
