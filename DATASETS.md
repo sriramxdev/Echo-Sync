@@ -36,9 +36,15 @@
 * **Assigned To:** Ujjawal Kesarwani
 * **Focus:** Official ISL dictionary/lexicon corpora (e.g., ISLRTC official sign bank, isolated signs).
 
+### Official Indian Sign Language Corpora Directory
+
 | Dataset Name | Source / Repository Link | Format (RGB / Skeletal / 3D) | Size / Vocab Count | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| *Example* | `https://example.com/islrtc` | Video clips / Dictionary | Standard vocabulary | Syntax & rule verification |
+| **ISLRTC National Dictionary** | `https://islrtc.nic.in` | Video clips (RGB) / Dictionary | **10,000+ standardized terms** | Official national corpus spanning academic, legal, medical, and agricultural categories. Signed by native Deaf experts. |
+| **Sign Learn Mobile Database** | `https://islrtc.nic.in` | Video clips (RGB) | Mobile lookup application | Pocket repository for Android/iOS sync to track isolated word searches natively. |
+| **FDMSE General Dictionary** | `https://indiansignlanguage.org` | Video clips (RGB) & Images | Comprehensive general vocabulary | Cross-mapped to **11 regional Indian languages** with structural tracking by C-DAC. |
+| **INCLUDE Dataset** | `https://kaggle.com` | Video clips (RGB) & Landmarked coordinates | **4,287 videos** (263 isolated word signs) | Public machine learning dataset spanning 15 distinct categories for word-level recognition. |
+| **ISL-CSLTR Corpus** | `https://mendeley.com` | Annotated continuous video frames (RGB) | Time-bounded sequences | Specifically engineered for **continuous sign language translation (SLT)** research. |
 
 ---
 
