@@ -8,6 +8,8 @@
 * **Assigned To:** Shubhanshu Singh
 * **Focus:** Continuous ISL sentence-level video/skeletal datasets (e.g., INCLUDE, ISL-CSLR, or regional corpora).
 
+## Continuous Indian Sign Language (ISL) Datasets
+
 | Dataset Name | Source / Repository Link | Format (RGB / Skeletal / 3D) | Size / Vocab Count | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | **iSign** | [iSign Benchmark Project Page](https://exploration-lab.github.io/iSign/) | Video / Skeletal (3D) | **118,228 pairs** | Free for research use; supports native benchmarking for multi-modal tasks including *SignVideo2Text* and *SignPose2Text*. |
@@ -15,8 +17,8 @@
 | **ISL-CSLTR** | [Kaggle Dataset Page](https://www.kaggle.com/datasets/drblack00/isl-csltr-indian-sign-language-dataset) | Video (RGB Frames) | **700 videos** / 18,863 sentence-level frames / 100 sentences | Fully annotated data recorded with 7 different signers across varied visual configurations. |
 | **ISLVT** | [Mendeley Data Repository](https://data.mendeley.com/datasets/98mzk82wbb/1) | Video (Dual-View) | **152 videos** / 76 sentence pairs | Captures continuous English-Marathi-ISL gloss sentence pairs from front and side angles. |
 | **INSIGNVID** | [Research Corpus References](https://arxiv.org/) | Video (RGB) | Varying custom configurations | Regional continuous configurations tailored for specialized sequence modelling. |
+| **ISL-FS** | [Official ISL-Fingerspelling Website](https://kirandevraj.github.io/ISL-Fingerspelling/) | RGB Video | 1,308 segments, 499 source videos, 14,814 characters, 3 signers | Continuous ISL fingerspelling dataset with aligned text and temporal annotations. Research use under CC BY-NC 4.0. |
 
-##### Note : Since delayed by Shubhanshu, added by Sri Ram.
 ---
 
 ## 🌍 Category B: Standard / Global Continuous SLR Benchmarks
