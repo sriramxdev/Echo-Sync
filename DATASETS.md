@@ -19,7 +19,6 @@
 | **INSIGNVID** | [Research Corpus References](https://arxiv.org/) | Video (RGB) | Varying custom configurations | Regional continuous configurations tailored for specialized sequence modelling. |
 | **ISL-FS** | [Official ISL-Fingerspelling Website](https://kirandevraj.github.io/ISL-Fingerspelling/) | RGB Video | 1,308 segments, 499 source videos, 14,814 characters, 3 signers | Continuous ISL fingerspelling dataset with aligned text and temporal annotations. Research use under CC BY-NC 4.0. |
 
-##### Note : Since delayed by Shubhanshu, added by Sri Ram.
 ---
 
 ## 🌍 Category B: Standard / Global Continuous SLR Benchmarks
