@@ -38,7 +38,7 @@
 | **ISLRTC National Dictionary** | `https://islrtc.nic.in` | Video clips (RGB) / Dictionary | **10,000+ standardized terms** | Official national corpus spanning academic, legal, medical, and agricultural categories. Signed by native Deaf experts. |
 | **Sign Learn Mobile Database** | `https://islrtc.nic.in` | Video clips (RGB) | Mobile lookup application | Pocket repository for Android/iOS sync to track isolated word searches natively. |
 | **FDMSE General Dictionary** | `https://indiansignlanguage.org` | Video clips (RGB) & Images | Comprehensive general vocabulary | Cross-mapped to **11 regional Indian languages** with structural tracking by C-DAC. |
-| **INCLUDE Dataset** | `https://kaggle.com` | Video clips (RGB) & Landmarked coordinates | **4,287 videos** (263 isolated word signs) | Public machine learning dataset spanning 15 distinct categories for word-level recognition. |
+| **INCLUDE Dataset** | https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl | Video clips (RGB) & Landmarked coordinates | **4,287 videos** (263 isolated word signs) | Public machine learning dataset spanning 15 distinct categories for word-level recognition. |
 | **ISL-CSLTR Corpus** | `https://mendeley.com` | Annotated continuous video frames (RGB) | Time-bounded sequences | Specifically engineered for **continuous sign language translation (SLT)** research. |
 
 
