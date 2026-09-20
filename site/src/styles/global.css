@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-canvas-light: #f8fafc;
+  --color-canvas-dark: #0b0f19;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #111827;
+
+  --color-emerald-accent: #059669;
+  --color-emerald-glow: #10b981;
+  --color-emerald-deep: #064e3b;
+
+  --color-border-light: #e2e8f0;
+  --color-border-dark: #1f2937;
+
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Rajdhani', sans-serif;
+}
+
+/* Base: JetBrains Mono for all content */
+html,
+body,
+p,
+span,
+a,
+li,
+input,
+button,
+label,
+table,
+td,
+th {
+  font-family: var(--font-mono);
+}
+
+/* Headings & Titles: Rajdhani explicitly */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+[data-theme] h1,
+[data-theme] h2,
+[data-theme] h3 {
+  font-family: var(--font-display) !important;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+/* Scrollbar rules */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Navigation and Headings use Rajdhani */
+header,
+nav,
+nav a,
+nav button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+[data-theme] h1,
+[data-theme] h2,
+[data-theme] h3 {
+  font-family: var(--font-display) !important;
+}
+
+/* Default headings keep bold, but allow utility overrides like font-normal */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+/* Body and everything else remains JetBrains Mono */
+html,
+body,
+p,
+span,
+li,
+input,
+table,
+td,
+th {
+  font-family: var(--font-mono);
+}

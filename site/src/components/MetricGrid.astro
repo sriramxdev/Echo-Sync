@@ -1,0 +1,23 @@
+---
+interface MetricItem {
+  tag: string;
+  headline: string;
+  description: string;
+}
+
+interface Props {
+  metrics: MetricItem[];
+}
+
+const { metrics } = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-6 mb-20 text-left">
+  {metrics.map(metric => (
+    <div class="p-6 rounded-2xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark transition-all duration-200 hover:border-emerald-500/50">
+      <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">{metric.tag}</span>
+      <h3 class="text-2xl font-mono font-bold mt-2 mb-1 tracking-tight">{metric.headline}</h3>
+      <p class="text-sm font-mono text-slate-500 dark:text-slate-400">{metric.description}</p>
+    </div>
+  ))}
+</div>

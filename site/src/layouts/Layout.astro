@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Real-Time Assistive Sign Translation via Spatial-Temporal Graph Networks." } = Astro.props;
+
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | Echo-Sync</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script is:inline>
+      const stored = typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+      document.documentElement.dataset.theme = stored || 'light';
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-canvas-light text-slate-800 dark:bg-canvas-dark dark:text-slate-100 transition-colors duration-200 selection:bg-emerald-500 selection:text-white">
+    <Navbar />
+
+    <main class="flex-grow pt-24">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      toggle?.addEventListener('click', () => {
+        const currentTheme = document.documentElement.dataset.theme;
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem('starlight-theme', nextTheme);
+      });
+    </script>
+  </body>
+</html>

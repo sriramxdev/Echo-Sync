@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import MetricGrid from '../components/MetricGrid.astro';
+import homeData from '../data/home.json';
+---
+
+<Layout title="Edge-Native Sign Translation">
+  <Hero badge={homeData.badge} hero={homeData.hero} />
+  <MetricGrid metrics={homeData.metrics} />
+</Layout>

@@ -1,0 +1,7 @@
+{
+  "copyright": "© 2026 Echo-Sync Team. Built with Astro, Starlight & Tailwind.",
+  "links": [
+    { "label": "Documentation", "href": "/overview/problem" },
+    { "label": "Source", "href": "https://github.com/sriramxdev/Echo-Sync" }
+  ]
+}

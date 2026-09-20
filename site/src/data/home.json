@@ -1,0 +1,27 @@
+{
+  "badge": "● Stage 1 & 2 Decoupled Topology",
+  "hero": {
+    "titlePrefix": "Real-Time Sign Translation",
+    "titleGradient": "Engineered for the Edge",
+    "description": "A 75-vertex canonical skeletal graph powered by Spatial-Temporal Graph Convolutions (ST-GCN) and zero-copy Rust token pruning for millisecond-latency translation.",
+    "primaryCta": { "label": "Read the Docs", "href": "/overview/problem" },
+    "secondaryCta": { "label": "View Architecture", "href": "#architecture" }
+  },
+  "metrics": [
+    {
+      "tag": "TENSOR SPEC",
+      "headline": "(4, 90, 75)",
+      "description": "4-channel coordinates (x, y, z, conf), 90 resampled frames, and 75 unified skeletal joints."
+    },
+    {
+      "tag": "HARDWARE FOOTPRINT",
+      "headline": "< 2.0 GB VRAM",
+      "description": "Optimized with FP16 AMP and gradient caching to train cleanly on edge GPUs (RTX 3050)."
+    },
+    {
+      "tag": "TOKEN PRUNING",
+      "headline": "DynaPrune (Rust)",
+      "description": "Dynamic motion decimation filtering static hold frames before ST-GCN inference passes."
+    }
+  ]
+}

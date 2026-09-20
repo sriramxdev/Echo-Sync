@@ -1,0 +1,16 @@
+{
+  "brand": {
+    "name": "Echo",
+    "accent": "Sync",
+    "href": "/"
+  },
+  "links": [
+    { "label": "Features", "href": "/#features" },
+    { "label": "Architecture", "href": "/#architecture" },
+    { "label": "Documentation", "href": "/overview/problem" }
+  ],
+  "cta": {
+    "label": "Github",
+    "href": "https://github.com/sriramxdev/Echo-Sync"
+  }
+}
