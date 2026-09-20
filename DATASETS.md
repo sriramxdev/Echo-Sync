@@ -46,7 +46,7 @@
 | **INCLUDE Dataset** | https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl | Video clips (RGB) & Landmarked coordinates | **4,287 videos** (263 isolated word signs) | Public machine learning dataset spanning 15 distinct categories for word-level recognition. |
 | **ISL-CSLTR Corpus** | https://data.mendeley.com/datasets/yx7kdssfjp/1 | Annotated continuous video frames (RGB) | Time-bounded sequences | Specifically engineered for **continuous sign language translation (SLT)** research. |
 
----
+
 
 ## ⚙️ Ingestion & Verification Engine
 * **Assigned To:** Sri Ram Sharma
