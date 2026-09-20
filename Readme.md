@@ -2,9 +2,22 @@
 
 > **Edge-Optimized Real-Time Sign Language Translation Platform**
 
+[![Documentation & Site](https://img.shields.io/badge/Live_Site-Astro_%2B_Starlight-059669.svg?logo=astro&logoColor=white)](https://sriramxdev.github.io/Echo-Sync/)
 [![Environment: Pixi](https://img.shields.io/badge/Environment-Pixi-blue.svg)](https://pixi.sh)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
+---
+
+## 🌐 Live Platform & Documentation
+
+Explore the official project website, interactive architecture visualizers, and module API specifications:
+
+🔗 **[Echo-Sync Documentation & Portal](https://sriramxdev.github.io/Echo-Sync/)**
+
+* **Interactive Showcase:** High-level problem statement, model benchmarks, and hardware targets.
+* **Technical Docs:** Canonical 75-joint skeletal schema, spatial-temporal normalization pipelines, and ST-GCN stage specifications.
+* **Edge Engine Specs:** Zero-copy DynaPrune Rust decimation engine details and latency metrics.
 
 ---
 
@@ -33,11 +46,3 @@ This repository uses **[Pixi](https://pixi.sh)** for deterministic, multi-platfo
 * **Linux / macOS:**
   ```bash
   curl -fsSL [https://pixi.sh/install.sh](https://pixi.sh/install.sh) | sh
-
-## Setup on Windows
-
-- Open powershell at the location you want this repo to be cloned.
-- Paste the following and press enter to run the **setup_win.ps1**.
-  ```powershell
-  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-  irm https://raw.githubusercontent.com/sriramxdev/Echo-Sync/main/setup_win.ps1 | iex
