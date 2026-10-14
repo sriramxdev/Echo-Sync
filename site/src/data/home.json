@@ -5,7 +5,7 @@
     "titleGradient": "Engineered for the Edge",
     "description": "A 75-vertex canonical skeletal graph powered by Spatial-Temporal Graph Convolutions (ST-GCN) and zero-copy Rust token pruning for millisecond-latency translation.",
     "primaryCta": { "label": "Read the Docs", "href": "/overview/problem" },
-    "secondaryCta": { "label": "View Architecture", "href": "#architecture" }
+    "secondaryCta": { "label": "View Architecture", "href": "Architecture.pdf" }
   },
   "metrics": [
     {
