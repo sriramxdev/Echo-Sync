@@ -19,8 +19,8 @@
       "description": "Optimized with FP16 AMP and gradient caching to train cleanly on edge GPUs (RTX 3050)."
     },
     {
-      "tag": "#",
-      "headline": "#",
+      "tag": "INGESTION STRATEGY",
+      "headline": "DYNAMIC",
       "description": "Dynamic motion decimation filtering static hold frames before ST-GCN inference passes."
     }
   ]
