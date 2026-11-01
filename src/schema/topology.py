@@ -1,3 +1,5 @@
+# THIS FILE IS PART OF THE ECHO-SYNC PROJECT.
+# Visit :
 # src/schema/topology.py
 """
 Echo-Sync Canonical Landmark Schema & Topology Definitions.

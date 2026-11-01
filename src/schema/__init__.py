@@ -1,3 +1,5 @@
+# THIS FILE IS PART OF THE ECHO-SYNC PROJECT.
+# Visit :
 # src/schema/__init__.py
 from src.schema.topology import (
     SCHEMA,

@@ -1,3 +1,5 @@
+# THIS FILE IS PART OF THE ECHO-SYNC PROJECT.
+# Visit :
 """Echo-Sync core pipeline entry point."""
 
 
