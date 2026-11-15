@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Echo-Sync Stage 1 — WebSocket UI Endpoint Test</title>
+  <style>
+    body {
+      background: #0f1115;
+      color: #e6edf3;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      margin: 0;
+    }
+    .status {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #7ee787;
+    }
+    .viewport {
+      position: relative;
+      width: 640px;
+      height: 480px;
+      border: 2px solid #30363d;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Echo-Sync Stage 1: Live WebSocket Endpoint</h2>
+  <div class="status" id="status">Connecting to ws://127.0.0.1:8765...</div>
+  <div class="viewport">
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const statusEl = document.getElementById("status");
+    const img = new Image();
+
+    let edges = [];
+    const ws = new WebSocket("ws://127.0.0.1:8765");
+
+    ws.onopen = () => {
+      statusEl.textContent = "Connected to Stage 1 Broadcaster";
+    };
+
+    ws.onclose = () => {
+      statusEl.textContent = "Disconnected";
+      statusEl.style.color = "#f85149";
+    };
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+
+      // 1. Store static bone edges received on handshake
+      if (data.type === "topology") {
+        edges = data.edges;
+        return;
+      }
+
+      // 2. Render frame + skeleton overlay in sync
+      if (data.type === "frame" && data.image_jpeg_b64) {
+        img.onload = () => {
+          const w = canvas.width;
+          const h = canvas.height;
+          ctx.drawImage(img, 0, 0, w, h);
+
+          const pts = data.landmarks;
+
+          // Draw 56 bone lines
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = "rgba(0, 255, 170, 0.75)";
+          for (const [u, v] of edges) {
+            const [x1, y1, , c1] = pts[u];
+            const [x2, y2, , c2] = pts[v];
+            if (c1 > 0.3 && c2 > 0.3 && (x1 > 0 || y1 > 0) && (x2 > 0 || y2 > 0)) {
+              ctx.beginPath();
+              ctx.moveTo(x1 * w, y1 * h);
+              ctx.lineTo(x2 * w, y2 * h);
+              ctx.stroke();
+            }
+          }
+
+          // Draw 75 canonical joints
+          for (let i = 0; i < pts.length; i++) {
+            const [x, y, , conf] = pts[i];
+            if (conf > 0.3 && (x > 0 || y > 0)) {
+              ctx.fillStyle = i < 25 ? "#3fb950" : i < 67 ? "#58a6ff" : "#f0883e";
+              ctx.beginPath();
+              ctx.arc(x * w, y * h, 3.5, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+
+          statusEl.textContent = `Frame #${data.frame_idx} | Stage 1 Latency: ${data.latency_ms} ms | Edges: ${edges.length}`;
+        };
+        img.src = "data:image/jpeg;base64," + data.image_jpeg_b64;
+      }
+    };
+  </script>
+</body>
+</html>

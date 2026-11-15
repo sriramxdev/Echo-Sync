@@ -7,6 +7,7 @@ from src.schema.topology import (
     POSE_UPPER_BODY_INDICES,
     FACE_CORE_INDICES,
     HAND_LANDMARK_COUNT,
+    ALL_GRAPH_EDGES,
 )
 
 __all__ = [
@@ -15,4 +16,5 @@ __all__ = [
     "POSE_UPPER_BODY_INDICES",
     "FACE_CORE_INDICES",
     "HAND_LANDMARK_COUNT",
+    "ALL_GRAPH_EDGES",
 ]
